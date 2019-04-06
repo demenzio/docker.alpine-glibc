@@ -13,6 +13,7 @@ wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_PKG_
 wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_PKG_VERSION}/glibc-bin-${GLIBC_PKG_VERSION}.apk && \
 wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_PKG_VERSION}/glibc-i18n-${GLIBC_PKG_VERSION}.apk && \
 apk add glibc-${GLIBC_PKG_VERSION}.apk glibc-bin-${GLIBC_PKG_VERSION}.apk glibc-i18n-${GLIBC_PKG_VERSION}.apk && \
+/usr/glibc-compat/bin/localedef -i en_US -f UTF-8 en_US.UTF-8 && \
 rm -rf /tmp/*
 
 #CMD ["/bin/bash"]
