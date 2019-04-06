@@ -1,9 +1,7 @@
 FROM alpine:latest
 LABEL MAINTAINER=xuvin
 
-ENV GLIBC_PKG_VERSION=2.27-r0
-ENV KEY_FILE_ANDYSHINN=andyshinn.rsa.pub
-ENV KEY_FILE_SGERRAND=sgerrand.rsa.pub
+ENV GLIBC_PKG_VERSION=2.29-r0
 
 WORKDIR /tmp
 
